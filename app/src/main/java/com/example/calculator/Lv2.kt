@@ -63,3 +63,4 @@ class CalculatorLv2(num1:Int, num2: Int, or: Int) {
     }
 
 }
+
