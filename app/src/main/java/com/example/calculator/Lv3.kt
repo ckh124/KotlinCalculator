@@ -8,10 +8,9 @@ fun main(){
     println("2. 빼기")
     println("3. 곱하기")
     println("4. 나누기")
-    println("5. 나머지 값 구하기")
     var operator = readLine()!!.toInt()
 
-    if( operator>5 ){
+    if( operator>4 ){
         println("잘못된 입력을 하셨습니다. 프로그램을 종료합니다.")
         return
     }
@@ -59,9 +58,10 @@ class CalculatorLv3(num1:Int, num2: Int, or: Int) {
     }
 
     class AddOperation(num1: Int, num2: Int) {
-        var result = num1 + num2
-        var num1 = num1
-        var num2 = num2
+        private var result = num1 + num2
+        private var num1 = num1
+        private var num2 = num2
+
         fun Calc() {
             println("${num1} + ${num2} 의 값은 ${result}입니다.")
         }
@@ -70,33 +70,33 @@ class CalculatorLv3(num1:Int, num2: Int, or: Int) {
     }
 
     class SubstractOperation(num1: Int, num2: Int) {
-        var result = num1 + num2
-        var num1 = num1
-        var num2 = num2
+        private var result = num1 - num2
+        private var num1 = num1
+        private var num2 = num2
         fun Calc() {
-            println("${num1} + ${num2} 의 값은 ${result}입니다.")
+            println("${num1} - ${num2} 의 값은 ${result}입니다.")
         }
 
 
     }
 
     class MultiplyOperation(num1: Int, num2: Int) {
-        var result = num1 + num2
-        var num1 = num1
-        var num2 = num2
+        private var result = num1 * num2
+        private var num1 = num1
+        private var num2 = num2
         fun Calc() {
-            println("${num1} + ${num2} 의 값은 ${result}입니다.")
+            println("${num1} * ${num2} 의 값은 ${result}입니다.")
         }
 
 
     }
 
     class DivideOperationOperation(num1: Int, num2: Int) {
-        var result = num1 + num2
-        var num1 = num1
-        var num2 = num2
+        private var result = num1 / num2
+        private var num1 = num1
+        private var num2 = num2
         fun Calc() {
-            println("${num1} + ${num2} 의 값은 ${result}입니다.")
+            println("${num1} / ${num2} 의 값은 ${result}입니다.")
         }
 
 
