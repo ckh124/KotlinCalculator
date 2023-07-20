@@ -19,7 +19,7 @@ fun main(){
     var inputNum1 = readLine()!!.toInt()
 
 
-    println("계산하실 숫자 중 하나를 적어주세요.")
+    println("계산하실 숫자 중 두 번째 숫자를 적어주세요.")
     var inputNum2 = readLine()!!.toInt()
 
     var calc = CalculatorLv3(inputNum1,inputNum2,operator)
